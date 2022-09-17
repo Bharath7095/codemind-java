@@ -1,0 +1,40 @@
+import java.util.*;
+public class file
+{
+    public static int isprime(int n)
+    {
+        int i;
+        if(n<=1)
+        {
+            return 0;
+        }
+        for(i=2;i<=(int)Math.sqrt(n);i++)
+        {
+            if(n%i==0)
+            {
+                return 0;
+            }
+        }
+        return 1;
+    }
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int n,s=0,c=0;
+        n=sc.nextInt();
+        int arr[]=new int[n];
+        int i;
+        for(i=0;i<n;i++)
+        {
+            arr[i]=sc.nextInt();
+            if(isprime(arr[i])==1)
+            {
+                s+=arr[i];
+                c++;
+            }
+        }
+        double d;
+        d=(double)s/c;
+        System.out.format("%.2f",d);
+    }
+}
