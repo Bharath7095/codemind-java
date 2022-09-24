@@ -4,30 +4,24 @@ public class file
     public static void main(String[] args)
     {
         Scanner sc=new Scanner(System.in);
-        int n,k;
+        int n;
         n=sc.nextInt();
         int i,j;
-        k=n;
         for(i=1;i<=n;i++)
         {
             for(j=1;j<=n;j++)
             {
-                if(i==j)
+                if(j==1 || j==n)
                 {
-                    System.out.print("x"+"");
-                    if(i==k)
-                    {
-                        k--;
-                    }
+                    System.out.print("*"+" ");
                 }
-                else if(k==j)
+                else if(i==j)
                 {
-                    System.out.print("x"+"");
-                    k--;
+                    System.out.print("*"+" ");
                 }
                 else
                 {
-                    System.out.print("0"+"");
+                    System.out.print(" "+" ");
                 }
             }
             System.out.println();
