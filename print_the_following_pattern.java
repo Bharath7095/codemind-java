@@ -5,14 +5,13 @@ public class file
     {
         Scanner sc=new Scanner(System.in);
         int n;
-        char ch;
         n=sc.nextInt();
-        for(int i=1;i<=n;i++)
+        int i,j;
+        for(i=1;i<=n;i++)
         {
-            ch=(char)(64+i);
-            for(int j=1;j<=n;j++)
+            for(j=n;j>0;j--)
             {
-                System.out.print(ch+" ");
+                System.out.print(j+" ");
             }
             System.out.println();
         }
