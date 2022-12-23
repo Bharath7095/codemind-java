@@ -8,8 +8,7 @@ public class file
         a=sc.nextInt();
         b=sc.nextInt();
         int arr[][]=new int[a][b];
-        int i,j;
-        int s=0;
+        int i,j,s=0;
         for(i=0;i<a;i++)
         {
             for(j=0;j<b;j++)
